@@ -4,13 +4,21 @@
 	padding: 0;
 }
 body {
-	background: linear-gradient(164deg, rgba(124,143,168,1) 0%, rgba(207,242,255,1) 100%);
+	background: linear-gradient(164deg, rgba(141,162,189,1) 0%, rgba(209,229,236,1) 100%);
 	font-family: 'Quicksand', sans-serif;
 	width: 400px;
 	min-height: 410px;
 	height: auto;
 	padding-bottom: 8px;
 }
+
+
+iframe {
+	border: none;
+}
+
+
+
 
 .footer {
 	position: fixed;
@@ -25,6 +33,7 @@ body {
 }
 .footer img {
 	height: 45px;
+	filter: brightness(130%);
 }
 .footer .credits {
 	display: block;

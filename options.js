@@ -22,6 +22,9 @@ function buttonHandler() {
 		case "menu":
 			loadMenu(target);
 			break;
+		case "page":
+			loadPage(target);
+			break;
 	}
 }
 
@@ -40,20 +43,27 @@ function buildMenuButton(buttonObj) {
 	return newButton;
 }
 
-function loadMenu(menuName) {
-	/* Clear menu of existing buttons */
+// Clears buttons from currently loaded menu
+function clearMenu() {
 	var range = document.createRange();
 	range.selectNodeContents(menuContainer);
 	range.deleteContents();
+}
+
+// Adds a "Back" button and a splitter
+function loadSubmenuUI() {
+	var backButton = buildMenuButton(subMenuBackButton);
+	menuContainer.appendChild(backButton);
 	
-	if (menuName != "mainMenu") {
-		var backButton = buildMenuButton(subMenuBackButton);
-		menuContainer.appendChild(backButton);
-		
-		var splitter = document.createElement("div");
-		splitter.classList.add("cap-menu-splitter");
-		menuContainer.appendChild(splitter);
-	}
+	var splitter = document.createElement("div");
+	splitter.classList.add("cap-menu-splitter");
+	menuContainer.appendChild(splitter);
+}
+
+// Loads a menu from JSON by its key/name
+function loadMenu(menuName) {
+	clearMenu();
+	if (menuName != "mainMenu") loadSubmenuUI();
 	
 	menus[menuName].forEach(function(buttonObj) {
 		var newButton = buildMenuButton(buttonObj);
@@ -62,4 +72,19 @@ function loadMenu(menuName) {
 	});
 }
 
+
+// Loads a webpage into the menu
+function loadPage(pageURL) {
+	clearMenu();
+	loadSubmenuUI();
+
+	var pageHolder = document.createElement("iframe");
+	pageHolder.src = pageURL;
+	
+	menuContainer.appendChild(pageHolder);
+}
+
+
+
+// Load main menu on page start
 loadMenu("mainMenu");
