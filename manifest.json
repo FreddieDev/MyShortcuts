@@ -9,7 +9,7 @@
     },
 	
 	"manifest_version":2,
-	"content_security_policy": "default-src 'none'; script-src 'self'; connect-src 'self'",
+	"content_security_policy": "default-src 'none'; script-src 'self'; style-src-elem 'self' https://use.fontawesome.com https://fonts.googleapis.com; font-src https://use.fontawesome.com https://fonts.gstatic.com",
 	
 	"permissions":[
 		"storage"

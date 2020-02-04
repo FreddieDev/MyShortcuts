@@ -6,6 +6,10 @@
 body {
 	background: linear-gradient(164deg, rgba(124,143,168,1) 0%, rgba(207,242,255,1) 100%);
 	font-family: 'Quicksand', sans-serif;
+	width: 400px;
+	min-height: 410px;
+	height: auto;
+	padding-bottom: 8px;
 }
 
 .footer {
@@ -13,10 +17,10 @@ body {
 	bottom: 0;
 	padding: 15px;
 	
-	background: #0004;
+	background: #0002;
 	width: 100%;
 	height: 100px;
-	
+
 	text-align: right;
 }
 .footer img {
@@ -24,7 +28,7 @@ body {
 }
 .footer .credits {
 	display: block;
-	color: #eee;
+	color: #fff;
 	font-style: italic;
 }
 
@@ -44,15 +48,15 @@ body {
 }
 
 .cap-menu-button {
-	height: 50px;
-	width: 190px;
+	height: 47px;
+	width: 160px;
 	border-radius: 16px;
 	text-align: center;
 	
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: bold;
 	
-	filter: drop-shadow(2px 4px 8px #0003);
+	filter: drop-shadow(2px 4px 8px #0002);
 	
 	margin: 7px;
 	

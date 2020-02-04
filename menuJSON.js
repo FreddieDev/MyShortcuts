@@ -34,7 +34,7 @@ menus = {
 			"icon": "fa-business-time",
 			"background": "linear-gradient(164deg, rgba(0,75,142,1) 15%, rgba(49,185,255,1) 100%)",
 			"type": "url",
-			"target": "https://corporatedirectory.capgemini.com/MyDirectory/portals/std/index-portal.jsp?selresource=&resource=myDetails",
+			"target": "https://missbhadtx03.corp.capgemini.com/DTX.NET/Summary.aspx",
 		},
 		{
 			"text": "Egencia",
