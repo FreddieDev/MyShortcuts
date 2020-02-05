@@ -1,15 +1,6 @@
 var menuContainer = document.getElementById("mainMenu");
 var templateButton = document.getElementById("templateButton");
 
-// Opens a URL with support for Chrome extensions
-function openURL(urlToOpen) {
-	if (chrome.tabs) {
-		chrome.tabs.create({ url: urlToOpen });
-	} else {
-		window.open(urlToOpen, "_blank");
-	}
-}
-
 // Click handler for menu buttons
 function buttonHandler() {
 	var type = this.getAttribute("type");
