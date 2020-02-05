@@ -25,7 +25,7 @@ menus = {
 		{
 			"text": "My details",
 			"icon": "fa-address-card",
-			"background": "linear-gradient(164deg, rgba(152,86,45,1) 0%, rgba(230,141,6,1) 100%)",
+			"background": "linear-gradient(164deg, rgba(98,87,32,1) 0%, rgba(255,115,0,1) 100%)",
 			"type": "url",
 			"target": "https://corporatedirectory.capgemini.com/MyDirectory/portals/std/index-portal.jsp?selresource=&resource=myDetails",
 		},
@@ -35,6 +35,20 @@ menus = {
 			"background": "linear-gradient(164deg, rgba(0,75,142,1) 15%, rgba(49,185,255,1) 100%)",
 			"type": "url",
 			"target": "https://missbhadtx03.corp.capgemini.com/DTX.NET/Summary.aspx",
+		},
+		{
+			"text": "MyLearning",
+			"icon": "fa-graduation-cap",
+			"background": "linear-gradient(164deg, rgba(40,7,87,1) 0%, rgba(114,0,228,1) 100%)",
+			"type": "url",
+			"target": "https://mylearning.capgemini.com/",
+		},
+		{
+			"text": "MyPath",
+			"icon": "fa-route",
+			"background": "linear-gradient(164deg, rgba(7,60,87,1) 0%, rgba(103,204,126,1) 100%)",
+			"type": "url",
+			"target": "https://myconnect.capgemini.com/sap/bc/ui5_ui5/sap/zmypath/index.html?sap-client=100",
 		},
 		{
 			"text": "Egencia",
@@ -53,7 +67,7 @@ menus = {
 		{
 			"text": "MyExpenses",
 			"icon": "fa-money-bill-wave",
-			"background": "linear-gradient(164deg, rgba(162,17,49,1) 0%, rgba(246,0,0,1) 100%)",
+			"background": "linear-gradient(164deg, rgba(120,3,84,1) 0%, rgba(255,0,0,1) 100%)",
 			"type": "url",
 			"target": "https://eu1.concursolutions.com/expense/client/default.asp",
 		},
@@ -79,13 +93,6 @@ menus = {
 			"background": "linear-gradient(164deg, rgba(147,49,15,1) 0%, rgba(242,60,0,1) 100%)",
 			"type": "url",
 			"target": "https://selfportal.capgemini.com/",
-		},
-		{
-			"text": "MyLearning",
-			"icon": "fa-graduation-cap",
-			"background": "linear-gradient(164deg, rgba(40,7,87,1) 0%, rgba(114,0,228,1) 100%)",
-			"type": "url",
-			"target": "https://mylearning.capgemini.com/",
 		},
 		{
 			"text": "365 Web",

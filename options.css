@@ -2,12 +2,13 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	user-select: none;
 }
 body {
 	background: linear-gradient(164deg, rgba(141,162,189,1) 0%, rgba(209,229,236,1) 100%);
 	font-family: 'Quicksand', sans-serif;
 	width: 400px;
-	min-height: 410px;
+	min-height: 440px;
 	height: auto;
 	padding-bottom: 8px;
 }
