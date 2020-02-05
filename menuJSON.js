@@ -81,6 +81,13 @@ menus = {
 			"target": "https://selfportal.capgemini.com/",
 		},
 		{
+			"text": "MyLearning",
+			"icon": "fa-graduation-cap",
+			"background": "linear-gradient(164deg, rgba(40,7,87,1) 0%, rgba(114,0,228,1) 100%)",
+			"type": "url",
+			"target": "https://mylearning.capgemini.com/",
+		},
+		{
 			"text": "365 Web",
 			"icon": "fa-file-upload",
 			"background": "linear-gradient(164deg, rgba(15,92,51,1) 0%, rgba(80,193,157,1) 100%)",

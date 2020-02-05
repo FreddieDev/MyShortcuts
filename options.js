@@ -38,7 +38,7 @@ function buildMenuButton(buttonObj) {
 	newButton.style.background = buttonObj.background;
 	newButton.querySelector("i").classList.add(buttonObj.icon);
 	newButton.querySelector("span").innerText = buttonObj.text;
-	newButton.addEventListener("click", buttonHandler);
+	newButton.addEventListener("mouseup", buttonHandler);
 	
 	return newButton;
 }
