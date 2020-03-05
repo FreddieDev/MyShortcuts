@@ -66,14 +66,28 @@ menus = {
 		},
 		{
 			"text": "MyExpenses",
-			"icon": "fa-money-bill-wave",
+			"icon": "fa-money-bill-wave-alt",
 			"background": "linear-gradient(164deg, rgba(120,3,84,1) 0%, rgba(255,0,0,1) 100%)",
 			"type": "url",
 			"target": "https://eu1.concursolutions.com/expense/client/default.asp",
 		},
 		{
+			"text": "Applaud",
+			"icon": "fa-award",
+			"background": "linear-gradient(164deg, rgba(118,131,36,1) 0%, rgba(214,230,12,1) 100%)",
+			"type": "url",
+			"target": "https://www.compliments-connect.co.uk/Applaud/Nomination/Wall",
+		},
+		{
+			"text": "365 Web",
+			"icon": "fa-file-upload",
+			"background": "linear-gradient(164deg, rgba(15,92,51,1) 0%, rgba(80,193,157,1) 100%)",
+			"type": "url",
+			"target": "https://capgemini.sharepoint.com/sites/office365-portal",
+		},
+		{
 			"text": "Other",
-			"icon": "fa-wrench",
+			"icon": "fa-folder-open",
 			"background": "linear-gradient(164deg, rgba(106,106,106,1) 0%, rgba(189,189,189,1) 100%)",
 			"type": "menu",
 			"target": "otherMenu",
@@ -82,10 +96,10 @@ menus = {
 	"otherMenu":[
 		{
 			"text": "Better DTX",
-			"icon": "fa-check-double",
+			"icon": "fa-puzzle-piece",
 			"background": "linear-gradient(164deg, rgba(0,184,111,1) 0%, rgba(0,255,205,1) 100%)",
 			"type": "url",
-			"target": "https://chrome.google.com/webstore/detail/dtx-polyfiller/mbdlbjpimeeemdhkehileedfdemdlogk",
+			"target": "https://chrome.google.com/webstore/detail/dtx-polyfiller-2/mbdlbjpimeeemdhkehileedfdemdlogk",
 		},
 		{
 			"text": "MobilePass",
@@ -93,13 +107,6 @@ menus = {
 			"background": "linear-gradient(164deg, rgba(147,49,15,1) 0%, rgba(242,60,0,1) 100%)",
 			"type": "url",
 			"target": "https://selfportal.capgemini.com/",
-		},
-		{
-			"text": "365 Web",
-			"icon": "fa-file-upload",
-			"background": "linear-gradient(164deg, rgba(15,92,51,1) 0%, rgba(80,193,157,1) 100%)",
-			"type": "url",
-			"target": "https://capgemini.sharepoint.com/sites/office365-portal",
 		},
 	],
 }
