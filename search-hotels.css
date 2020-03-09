@@ -49,3 +49,9 @@
 #getFieldsButtons {
     visibility: hidden;
 }
+
+
+/* DARKMODE */
+body.darkmode > * {
+	color: #ddd;
+}

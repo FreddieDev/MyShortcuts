@@ -5,11 +5,15 @@ function loadFieldsFromStorage() {
         hotelSearch_MaxPrice: null,
         hotelSearch_StartDay: null,
         hotelSearch_EndDay: null,
+		
+		darkmode: false,
     }, function(items) {
         document.getElementById("areaCodeField").value = items.hotelSearch_CodeName;
         document.getElementById("maximumPriceField").value = items.hotelSearch_MaxPrice;
         document.getElementById("startDayField").value = items.hotelSearch_StartDay;
         document.getElementById("endDayField").value = items.hotelSearch_EndDay;
+		
+		document.body.classList.toggle("darkmode", items.darkmode);
     });
 }
 
@@ -58,7 +62,6 @@ function toggleGetFieldsUI() {
     this.disabled = true;
     document.getElementById("getFieldsButtons").style.visibility = "visible";
 }
-
 
 
 

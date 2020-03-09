@@ -1,5 +1,6 @@
 var menuContainer = document.getElementById("mainMenu");
 var templateButton = document.getElementById("templateButton");
+var pageHolderpageHolder; // Make iframe pages global so darkmode can be toggled
 
 // Click handler for menu buttons
 function buttonHandler() {
@@ -61,6 +62,10 @@ function loadMenu(menuName) {
 		
 		menuContainer.appendChild(newButton);
 	});
+	
+	chrome.storage.sync.get(function(items) {
+		document.body.classList.toggle("darkmode", items.darkmode);
+	});
 }
 
 
@@ -69,13 +74,29 @@ function loadPage(pageURL) {
 	clearMenu();
 	loadSubmenuUI();
 
-	var pageHolder = document.createElement("iframe");
+	pageHolder = document.createElement("iframe");
 	pageHolder.src = pageURL;
 	
 	menuContainer.appendChild(pageHolder);
 }
 
 
+// Toggles dark appearance and saves preference to Chrome storage
+function toggleDarkMode() {
+	document.body.classList.add("darkmodeAnimations");
+	document.body.classList.toggle("darkmode");
+	chrome.storage.sync.set({
+		darkmode: document.body.classList.contains("darkmode")
+	});
+	
+	// Refresh iFrames to let them load darkmode
+	if (pageHolder) pageHolder.contentWindow.location.reload();
+}
+
 
 // Load main menu on page start
 loadMenu("mainMenu");
+
+
+// Load handlers
+document.getElementById("darkModeToggle").addEventListener("click", toggleDarkMode);
